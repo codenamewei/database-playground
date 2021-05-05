@@ -2,16 +2,16 @@
 
 ### Select Statements
 
-| Select Statements | Description |
-| ---------------------  | --------------- |
-| **SELECT * FROM tbl** | Select all rows and columns from table tbl | 
-| Row 2 Column 1 | Row 2 Column 2 |
-| Row 3 Column 1 | Row 3 Column 2 | 
+| Select Statements | Description | Example |
+| ---------------------  | --------------- | --------------- |
+| **SELECT** | Select all rows and columns from table tbl | SELECT * FROM tbl |
+| Row 2 Column 1 | Row 2 Column 2 |  Row 2 Column 3 | 
+| Row 3 Column 1 | Row 3 Column 2 |  Row 3 Column 3 | 
 
 
 ### NULL Functions, Statements
 
-| NULL Statements | Description |
-| ---------------------  | --------------- |
-| **IS NULL** | Check if value is null | 
-| **IS NOT NULL** | Check if value is not null |
+| NULL Statements | Description | Example |
+| ---------------------  | --------------- | --------------- |
+| **IS NULL** | Check if value is null | SELECT name FROM city WHERE countrycode IS NULL |
+| **IS NOT NULL** | Check if value is not null | SELECT name FROM city WHERE countrycode IS NOT NULL |
