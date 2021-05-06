@@ -4,7 +4,7 @@
 
 | Select Statements | Description | Example |
 | ---------------------  | --------------- | --------------- |
-| **SELECT** | Select all rows and columns from table tbl | **SELECT** * FROM tbl |
+| **SELECT** | Select rows and colums from table | **SELECT** * FROM tbl |
 | **IN**| Specify multiple values in a WHERE clause |  SELECT color FROM table WHERE color **IN** ('red', 'blue') | 
 | Row 3 Column 1 | Row 3 Column 2 |  Row 3 Column 3 | 
 
@@ -15,3 +15,9 @@
 | ---------------------  | --------------- | --------------- |
 | **IS NULL** | Check if value is null | SELECT name FROM city WHERE countrycode **IS NULL** |
 | **IS NOT NULL** | Check if value is not null | SELECT name FROM city WHERE countrycode **IS NOT NULL** |
+
+### JOIN Statements
+
+| JOIN Statements | Description | Example |
+| ---------------------  | --------------- | --------------- |
+| **JOIN** | Check if value is null | SELECT name FROM city WHERE countrycode **IS NULL** |
