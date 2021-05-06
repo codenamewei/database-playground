@@ -1,18 +1,16 @@
 # :card_file_box: SQL Keywords
 
-### Basic Statements
+### BASIC
 
-| Select Statements | Description | Example |
+| Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
 | **SELECT** | Select rows and colums from table | **SELECT** * FROM tbl |
 | **SELECT DISTINCT** | Return only distinct (different) values | **SELECT DISTINCT** * FROM tbl |
 | **IN**| Specify multiple values in a WHERE clause |  SELECT color FROM table WHERE color **IN** ('red', 'blue') | 
-| Row 3 Column 1 | Row 3 Column 2 |  Row 3 Column 3 | 
 
+### AGGREGATE
 
-### AGGREGATE Functions
-
-| Select Statements | Description | Example |
+| Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
 | **SUM(..)** | Total sum of a numeric column | To be added |
 | **AVG(..)** | Average value of a numeric column| To be added |
@@ -21,24 +19,24 @@
 | **MAX(..)** | Largest value of the selected column | To be added |
 
 
-### ROUNDING Functions
+### ROUNDING
 
-| Select Statements | Description | Example |
+| Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
 | **ROUND(..)** | Rounds a number to a specified number of decimal place | To be added |
 | **CEIL(..)** | Returns the smallest integer value that is bigger than or equal to a number | To be added |
 | **FLOOR(..)** | Returns the largest integer value that is smaller than or equal to a number | To be added |
 
-### NULL Functions, Statements
+### NULL (Related)
 
-| NULL Statements | Description | Example |
+| Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
 | **IS NULL** | Check if value is null | SELECT name FROM city WHERE countrycode **IS NULL** |
 | **IS NOT NULL** | Check if value is not null | SELECT name FROM city WHERE countrycode **IS NOT NULL** |
 
-### JOIN Functions
+### JOIN
 
-| JOIN Statements | Description | Example |
+| Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
 | **JOIN** | Check if value is null | SELECT name FROM city WHERE countrycode **IS NULL** |
 
