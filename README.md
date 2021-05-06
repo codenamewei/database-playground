@@ -5,6 +5,7 @@
 | Select Statements | Description | Example |
 | ---------------------  | --------------- | --------------- |
 | **SELECT** | Select rows and colums from table | **SELECT** * FROM tbl |
+| **SELECT DISTINCT** | Return only distinct (different) values | **SELECT DISTINCT** * FROM tbl |
 | **IN**| Specify multiple values in a WHERE clause |  SELECT color FROM table WHERE color **IN** ('red', 'blue') | 
 | Row 3 Column 1 | Row 3 Column 2 |  Row 3 Column 3 | 
 
