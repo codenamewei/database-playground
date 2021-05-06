@@ -9,6 +9,17 @@
 | Row 3 Column 1 | Row 3 Column 2 |  Row 3 Column 3 | 
 
 
+### AGGREGATE Functions
+
+| Select Statements | Description | Example |
+| ---------------------  | --------------- | --------------- |
+| **SUM(..)** | Total sum of a numeric column | To be added |
+| **AVG(..)** | Average value of a numeric column| To be added |
+| **COUNT(..)** | Number of rows that matches a specified criterion | To be added |
+| **MIN(..)** | Smallest value of the selected column | To be added |
+| **MAX(..)** | Largest value of the selected column | To be added |
+
+
 ### NULL Functions, Statements
 
 | NULL Statements | Description | Example |
@@ -16,7 +27,7 @@
 | **IS NULL** | Check if value is null | SELECT name FROM city WHERE countrycode **IS NULL** |
 | **IS NOT NULL** | Check if value is not null | SELECT name FROM city WHERE countrycode **IS NOT NULL** |
 
-### JOIN Statements
+### JOIN Functions
 
 | JOIN Statements | Description | Example |
 | ---------------------  | --------------- | --------------- |
