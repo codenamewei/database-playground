@@ -5,7 +5,7 @@
 | Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
 | **SELECT** | Select rows and colums from table | **SELECT** * FROM tbl |
-| **SELECT DISTINCT** | Return only distinct (different) values | **SELECT DISTINCT** * FROM tbl |
+| **SELECT DISTINCT** | Return only distinct (different) values | **SELECT DISTINCT** name FROM tbl WHERE ID % 2 = 0 |
 | **IN**| Specify multiple values in a WHERE clause |  SELECT color FROM table WHERE color **IN** ('red', 'blue') | 
 | **LENGTH(..)** | Returns the number of characters in a string | SELECT **LENGTH(str)** FROM tbl |
 
