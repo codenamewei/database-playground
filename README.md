@@ -21,6 +21,14 @@
 | **MAX(..)** | Largest value of the selected column | To be added |
 
 
+### ROUNDING Functions
+
+| Select Statements | Description | Example |
+| ---------------------  | --------------- | --------------- |
+| **ROUND(..)** | Rounds a number to a specified number of decimal place | To be added |
+| **CEIL(..)** | Returns the smallest integer value that is bigger than or equal to a number | To be added |
+| **FLOOR(..)** | Returns the largest integer value that is smaller than or equal to a number | To be added |
+
 ### NULL Functions, Statements
 
 | NULL Statements | Description | Example |
