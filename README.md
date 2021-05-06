@@ -14,7 +14,7 @@
 
 | Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
-| **SUM(..)** | Total sum of a numeric column | To be added |
+| **SUM(..)** | Total sum of a numeric column | SELECT SUM(id) FROM tbl |
 | **AVG(..)** | Average value of a numeric column| To be added |
 | **COUNT(..)** | Number of rows that matches a specified criterion | To be added |
 | **MIN(..)** | Smallest value of the selected column | To be added |
