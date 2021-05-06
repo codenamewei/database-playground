@@ -21,3 +21,14 @@
 | JOIN Statements | Description | Example |
 | ---------------------  | --------------- | --------------- |
 | **JOIN** | Check if value is null | SELECT name FROM city WHERE countrycode **IS NULL** |
+
+
+
+## Other Notes 
+
+**Database systems that uses SQL**
+- Amazon Redshift
+- PostgreSQL
+- MySQL
+- Oracle Database
+- Microsoft SQLServer
