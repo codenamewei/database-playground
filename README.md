@@ -13,8 +13,9 @@
 | **LIMIT** | Limit number of returns | SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY), CITY ASC **LIMIT 1** |
 | **AS** | Alias for display. Only been used in the data output. Cannot used for filtering | SELECT COUNT(amount) **AS** num_transactions FROM payment |
 | **GROUP BY** | Group rows that have the same values | SELECT COUNT(CustomerID), Country FROM Customers **GROUP BY **Country; |
-| **CAST** | Converts a value (of any type) into a specified datatype | SELECT CAST(ID AS FLOAT) FROM Students WHERE Name = 'Samantha' |
-| **HAVING** | Filter after aggregation have take place |  SELECT SUM(SALES) FROM tbl HAVING SUM(SALES) > 1000 |
+| **CAST** | Converts a value (of any type) into a specified datatype | SELECT **CAST**(ID AS FLOAT) FROM Students WHERE Name = 'Samantha' |
+| **HAVING** | Filter after aggregation have take place |  SELECT SUM(SALES) FROM tbl **HAVING** SUM(SALES) > 1000 |
+| **CONCAT(..)** | Adds two or more strings together | **CONCAT**('+', country_code, phone_number) |
 
 Example: 
 - **Wrong** - SELECT amount **AS** new_name FROM payment WHERE new_name > 2
