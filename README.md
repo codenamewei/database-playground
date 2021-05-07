@@ -58,11 +58,4 @@ _Note_:
 [JOIN Reference](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
 
 
-## Other Notes 
 
-**Database systems that uses SQL**
-- Amazon Redshift
-- PostgreSQL
-- MySQL
-- Oracle Database
-- Microsoft SQLServer
