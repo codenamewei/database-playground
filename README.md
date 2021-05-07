@@ -28,7 +28,7 @@
 
 | Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
-| **ROUND(..)** | Rounds a number to a specified number of decimal place | To be added |
+| **ROUND(..)** | Rounds a number to a specified number of decimal place | SELECT ROUND(salary, 2) FROM tbl WHERE name = 'john doe' |
 | **CEIL(..)** | Returns the smallest integer value that is bigger than or equal to a number | To be added |
 | **FLOOR(..)** | Returns the largest integer value that is smaller than or equal to a number | To be added |
 
