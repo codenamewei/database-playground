@@ -51,7 +51,7 @@ Example:
 
 | Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
-| **JOIN** | Check if value is null | SELECT name FROM city WHERE countrycode **IS NULL** |
+| **(INNER) JOIN** | Selects records that have matching values in both table | SELECT Students.ID, Name, Friend_ID FROM Students JOIN Friends ON Students.ID = Friends.ID |
 
 _Note_:
 [JOIN Reference](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
