@@ -45,6 +45,9 @@
 | ---------------------  | --------------- | --------------- |
 | **JOIN** | Check if value is null | SELECT name FROM city WHERE countrycode **IS NULL** |
 
+_Note_:
+[JOIN Reference](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
+
 
 
 ## Other Notes 
