@@ -17,6 +17,27 @@
 | **HAVING** | Filter after aggregation have take place |  SELECT SUM(SALES) FROM tbl **HAVING** SUM(SALES) > 1000 |
 | **CONCAT(..)** | Adds two or more strings together | **CONCAT**('+', country_code, phone_number) |
 
+### INTERMEDIATE
+| Functions | Description |
+| ---------------------  | --------------- |
+| **CASE(..)** | IF-ELSE STATEMENT |
+```
+#Template
+SELECT CASE
+WHEN case THEN result 1
+WHEN case THEN result 2
+ELSE result
+END;
+
+#Example
+SELECT
+CASE
+WHEN A = B THEN "It's a match"
+ELSE "Nothing match"
+END
+FROM TRIANGLES;
+```
+
 
 ### AGGREGATE
 
