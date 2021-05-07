@@ -17,11 +17,6 @@
 | **HAVING** | Filter after aggregation have take place |  SELECT SUM(SALES) FROM tbl **HAVING** SUM(SALES) > 1000 |
 | **CONCAT(..)** | Adds two or more strings together | **CONCAT**('+', country_code, phone_number) |
 
-Example: 
-- **Wrong** - SELECT amount **AS** new_name FROM payment WHERE new_name > 2
-- **Right** - SELECT amount **AS** new_name FROM payment WHERE amount > 2
-
-
 
 ### AGGREGATE
 
@@ -61,7 +56,6 @@ Example:
 
 _Note_:
 [JOIN Reference](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
-
 
 
 ## Other Notes 
