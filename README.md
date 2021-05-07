@@ -14,7 +14,7 @@
 | **AS** | Alias for display. Only been used in the data output. Cannot used for filtering | SELECT COUNT(amount) **AS** num_transactions FROM payment |
 | **GROUP BY** | Group rows that have the same values | SELECT COUNT(CustomerID), Country FROM Customers **GROUP BY **Country; |
 | **CAST** | Converts a value (of any type) into a specified datatype | SELECT CAST(ID AS FLOAT) FROM Students WHERE Name = 'Samantha' |
-| **HAVING** | 
+| **HAVING** | Filter after aggregation have take place |  SELECT SUM(SALES) FROM tbl HAVING SUM(SALES) > 1000 |
 
 Example: 
 - **Wrong** - SELECT amount **AS** new_name FROM payment WHERE new_name > 2
