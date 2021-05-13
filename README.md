@@ -67,6 +67,21 @@ INSERT INTO mytable(id, username, johndoe)
 VALUES (123, 'johndoe', 'door');
 ```
 
+| Functions | Description |
+| ---------------------  | --------------- |
+| **LIKE** | WHERE<>LIKE | Search for a specified pattern in a column |
+| **NOT LIKE** | WHERE<>NOT LIKE | Search for a specified pattern not in a column |
+
+
+```
+#Example
+SELECT * FROM mytable 
+WHERE username LIKE '%doe%'
+
+
+SELECT * FROM mytable
+WHERE username NOT LIKE '%doe%';
+```
 
 | Functions | Description |
 | ---------------------  | --------------- |
