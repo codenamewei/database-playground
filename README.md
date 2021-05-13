@@ -74,6 +74,21 @@ VALUES (123, 'johndoe', 'door');
 
 
 ```
+#Template 
+SELECT * FROM tbl WHERE name LIKE ???
+
+# The percent sign (%) represents zero, one, or multiple characters
+# The underscore sign (_) represents one, single character
+
+       LIKE Operator	                       Description
+WHERE CustomerName LIKE 'a%'	Finds any values that start with "a"
+WHERE CustomerName LIKE '%a'	Finds any values that end with "a"
+WHERE CustomerName LIKE '%or%'	Finds any values that have "or" in any position
+WHERE CustomerName LIKE '_r%'	Finds any values that have "r" in the second position
+WHERE CustomerName LIKE 'a_%'	Finds any values that start with "a" and are at least 2 characters in length
+WHERE CustomerName LIKE 'a__%'	Finds any values that start with "a" and are at least 3 characters in length
+WHERE ContactName LIKE 'a%o'	Finds any values that start with "a" and ends with "o"
+
 #Example
 SELECT * FROM mytable 
 WHERE username LIKE '%doe%'
