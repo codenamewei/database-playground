@@ -54,7 +54,7 @@ Table of Contents
 
 | Constraint | Description | Example |
 | ---------------------  | --------------- | --------------- |
-| **NOT NULL** |  | SELECT name FROM city WHERE countrycode **IS NOT NULL** | CREATE TABLE mouse<br />(<br /> name VARCHAR(50) NOT NULL,<br />percentage INT NOT NULL,<br />PRIMARY KEY(name)<br />);  |
+| **NOT NULL** | Enforces a column to NOT accept NULL values | CREATE TABLE mouse<br />(<br />    name VARCHAR(50) NOT NULL,<br />    percentage INT NOT NULL,<br />    PRIMARY KEY(name)<br />);  |
 | **IS NULL** | Check if value is null | SELECT name FROM city WHERE countrycode **IS NULL** |
 | **IS NOT NULL** | Check if value is not null | SELECT name FROM city WHERE countrycode **IS NOT NULL** |
 
