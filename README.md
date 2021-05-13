@@ -166,4 +166,7 @@ _Note_:
 [JOIN Reference](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
 
 
+## Other Notes
+- Avoid using column or table names containing spaces or using reserved words in SQL.  
+  For example, avoid names like _table_ or _first name_.
 
