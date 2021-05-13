@@ -147,6 +147,14 @@ FROM TRIANGLES;
 SELECT name, percentage,
 (CASE WHEN percentage < 50 THEN 'Fail' ELSE 'Pass' END) AS remark
 FROM student;
+
+SELECT CASE
+WHEN percentage <= 35 THEN 'fail'
+WHEN percentage > 35 AND percentage < 50 THEN 'pass'
+ELSE 'excellent' END AS result,
+COUNT(*) AS passing_count
+FROM STUDENT
+GROUP BY result
 ```
 
 ### JOIN & UNION
