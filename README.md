@@ -20,6 +20,29 @@
 ### INTERMEDIATE
 | Functions | Description |
 | ---------------------  | --------------- |
+| **CREATE TABLE** | Create a new table in the database |
+```
+#Template
+
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+);
+
+#Example
+CREATE TABLE mytable
+(
+  id int NOT NULL, 
+  username VARCHAR(100) NOT NULL, 
+  password VARCHAR(100) NOT NULL, 
+  PRIMARY KEY(id)
+);
+```
+
+| Functions | Description |
+| ---------------------  | --------------- |
 | **CASE(..)** | IF-ELSE STATEMENT |
 ```
 #Template
@@ -38,6 +61,15 @@ END
 FROM TRIANGLES;
 ```
 
+
+
+#Example
+SELECT
+CASE
+WHEN A = B THEN "It's a match"
+ELSE "Nothing match"
+END
+FROM TRIANGLES;
 
 ### AGGREGATE
 
