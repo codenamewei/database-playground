@@ -18,6 +18,12 @@
 | **CONCAT(..)** | Adds two or more strings together | **CONCAT**('+', country_code, phone_number) |
 
 ### INTERMEDIATE
+
+| Functions | Description | Example |
+| ---------------------  | --------------- | --------------- |
+| **DROP TABLE** | Delete table of a specific name | **DROP TABLE** * DROP TABLE mytable |
+
+
 | Functions | Description |
 | ---------------------  | --------------- |
 | **CREATE TABLE** | Create a new table in the database |
@@ -60,8 +66,6 @@ ELSE "Nothing match"
 END
 FROM TRIANGLES;
 ```
-
-
 
 #Example
 SELECT
