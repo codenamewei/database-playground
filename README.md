@@ -1,5 +1,16 @@
 # SQL Keywords [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
+Table of Contents
+-----------------
+
+- [Basic](#basic)
+    - [Aggregate](#aggregate)
+    - [Mathematics](#mathematics)
+    - [NULL Constraint](#null)
+- [Intermediate](#intermediate)
+- [Advanced](#advanced)
+- [Other Notes](#other-notes)
+
 ## BASIC
 
 | Functions | Description | Example |
@@ -39,12 +50,14 @@
 | **ABS(..)** | Returns absolute values | SELECT **ABS**(MAX(value) - MIN(value)) FROM tbl|
 
 
-### NULL (Related)
+### NULL
 
-| Functions | Description | Example |
+| Constraint | Description | Example |
 | ---------------------  | --------------- | --------------- |
+| **NOT NULL** |  | SELECT name FROM city WHERE countrycode **IS NOT NULL** | CREATE TABLE mouse<br />(<br /> name VARCHAR(50) NOT NULL,<br />percentage INT NOT NULL,<br />PRIMARY KEY(name)<br />);  |
 | **IS NULL** | Check if value is null | SELECT name FROM city WHERE countrycode **IS NULL** |
 | **IS NOT NULL** | Check if value is not null | SELECT name FROM city WHERE countrycode **IS NOT NULL** |
+
 
 ## INTERMEDIATE
 
