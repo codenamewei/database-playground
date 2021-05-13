@@ -16,12 +16,14 @@
 | **CAST** | Converts a value (of any type) into a specified datatype | SELECT **CAST**(ID AS FLOAT) FROM Students WHERE Name = 'Samantha' |
 | **HAVING** | Filter after aggregation have take place |  SELECT SUM(SALES) FROM tbl **HAVING** SUM(SALES) > 1000 |
 | **CONCAT(..)** | Adds two or more strings together | **CONCAT**('+', country_code, phone_number) |
+| **WHERE**| Filter records | SELECT * FROM tbl **WHERE** num=123 | 
 
 ### INTERMEDIATE
 
 | Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
 | **DROP TABLE** | Delete table of a specific name | **DROP TABLE** * DROP TABLE mytable |
+| **UPDATE .. SET ...WHERE** | Modify records in the table | **UPDATE** mytable **SET** username='john doe' **WHERE** id=0 |
 
 
 
