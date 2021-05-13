@@ -24,6 +24,7 @@
 | ---------------------  | --------------- | --------------- |
 | **DROP TABLE** | Delete table of a specific name | **DROP TABLE** * DROP TABLE mytable |
 | **UPDATE .. SET ...WHERE** | Modify records in the table | **UPDATE** mytable **SET** username='john doe' **WHERE** id=0 |
+| **DELETE FROM .. WHERE** | Delete records in the table | **DELETE FROM** mytable **WHERE** id=0 |
 
 
 
