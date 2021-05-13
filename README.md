@@ -24,6 +24,8 @@
 | **DROP TABLE** | Delete table of a specific name | **DROP TABLE** * DROP TABLE mytable |
 
 
+
+
 | Functions | Description |
 | ---------------------  | --------------- |
 | **CREATE TABLE** | Create a new table in the database |
@@ -46,6 +48,22 @@ CREATE TABLE mytable
   PRIMARY KEY(id)
 );
 ```
+
+| Functions | Description |
+| ---------------------  | --------------- |
+| **INSERT INTO ... VALUES** | Insert values into table | 
+
+
+```
+#Template
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+
+#Example
+INSERT INTO mytable(id, username, johndoe) 
+VALUES (123, 'johndoe', 'door');
+```
+
 
 | Functions | Description |
 | ---------------------  | --------------- |
