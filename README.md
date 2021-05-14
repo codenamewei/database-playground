@@ -8,7 +8,7 @@ Table of Contents
     - [Aggregate](#aggregate)
     - [Range](#range)
     - [Mathematics](#mathematics)
-    - [Null](#null)
+    - [Constraint](#constraint)
     - [Others](#others-basic)
 - [Intermediate](#intermediate)
     - [Create](#create)
@@ -69,17 +69,19 @@ AND category_id NOT IN (1,2,3);
 | **ABS(..)** | Returns absolute values | SELECT **ABS**(MAX(value) - MIN(value)) FROM tbl|
 
 
-### NULL
+### Constraint
 
 | Constraint | Description | Example |
 | ---------------------  | --------------- | --------------- |
-| **NOT NULL** | Enforces a column to NOT accept NULL values | CREATE TABLE mouse<br />(<br />    name VARCHAR(50) NOT NULL,<br />    percentage INT NOT NULL,<br />    PRIMARY KEY(name)<br />);  |
-| **IS NULL** | Check if value is null | SELECT name FROM city WHERE countrycode **IS NULL** |
-| **IS NOT NULL** | Check if value is not null | SELECT name FROM city WHERE countrycode **IS NOT NULL** |
+| **NOT NULL** | Enforces a column to NOT accept NULL values | CREATE TABLE mouse<br />(<br />    name VARCHAR(50) **NOT NULL**,<br />    percentage INT **NOT NULL**,<br />    PRIMARY KEY(name)<br />);  |
+| **UNIQUE** | Ensures that all values in a column are different.<br />A PRIMARY KEY constraint automatically has a UNIQUE constraint. | CREATE TABLE shop<br />(<br />    coffee VARCHAR(50) NOT NULL,<br />    code INT NOT NULL **UNIQUE**,<br />    PRIMARY KEY(coffee)<br />);  |
+
 
 ### OTHERS-BASIC
 | Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
+| **IS NULL** | Check if value is null | SELECT name FROM city WHERE countrycode **IS NULL** |
+| **IS NOT NULL** | Check if value is not null | SELECT name FROM city WHERE countrycode **IS NOT NULL** |
 | **LENGTH(..)** | Returns the number of characters in a string | SELECT **LENGTH(str)** FROM tbl |
 | **ORDER BY .. ASC/DESC** | Arrange sequence according to alphabetically / numbering order. <br />Always use ORDER BY when using LIMIT; otherwise the rows you will get will be unpredictable. | SELECT CITY, LENGTH(CITY) FROM STATION **ORDER BY** LENGTH(CITY), CITY ASC;<br />SELECT * FROM student<br />**ORDER BY** percentage DESC LIMIT 2;|
 | **LIMIT** | Limit number of returns | SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY), CITY ASC **LIMIT 1** |
