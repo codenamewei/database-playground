@@ -258,3 +258,5 @@ _Note_:
 - [Practice > SQL > Basic Join > The Report](https://www.hackerrank.com/challenges/the-report/problem)
 - [Practice > SQL > Advanced Join > Placements](https://www.hackerrank.com/challenges/placements/problem)
 - [Practice > SQL > Advanced Select > Binary Tree Nodes](https://www.hackerrank.com/challenges/binary-search-tree-1/problem)
+- [Practice > SQL > Advanced Select > New Companies](https://www.hackerrank.com/challenges/the-company/problem)
+
