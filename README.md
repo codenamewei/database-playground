@@ -4,15 +4,16 @@ Table of Contents
 -----------------
 
 - [Basic](#basic)
-    - [SELECT](#select)
-    - [AGGREGATE](#aggregate)
-    - [RANGE](#range)
-    - [MATHEMATICS](#mathematics)
-    - [NULL](#null)
+    - [Select](#select)
+    - [Aggregate](#aggregate)
+    - [Range](#range)
+    - [Mathematics](#mathematics)
+    - [Null](#null)
     - [Others](#others-basic)
 - [Intermediate](#intermediate)
-    - [CREATE](#create)
-    - [LIKE](#like)
+    - [Create](#create)
+    - [Like](#like)
+    - [String Operation](#string-operation)
     - [Others](#others-intermediate)
 - [Advanced](#advanced)
     - [CASE](#case)
@@ -86,7 +87,6 @@ AND category_id NOT IN (1,2,3);
 | **GROUP BY** | Group rows that have the same values | SELECT COUNT(CustomerID), Country FROM Customers **GROUP BY **Country; |
 | **CAST** | Converts a value (of any type) into a specified datatype | SELECT **CAST**(ID AS FLOAT) FROM Students WHERE Name = 'Samantha' |
 | **HAVING** | Filter after aggregation have take place |  SELECT SUM(SALES) FROM tbl **HAVING** SUM(SALES) > 1000 |
-| **CONCAT(..)** | Adds two or more strings together | **CONCAT**('+', country_code, phone_number) |
 | **WHERE**| Filter records | SELECT * FROM tbl **WHERE** num=123 | 
 
 ## INTERMEDIATE
@@ -165,6 +165,13 @@ WHERE username LIKE '%doe%'
 SELECT * FROM mytable
 WHERE username NOT LIKE '%doe%';
 ```
+### STRING OPERATION
+| Functions | Description | Example |
+| ---------------------  | --------------- | --------------- |
+| **LOWER(..)** | Converts a string to lower-case | **LOWER**('String is SAMPLE') |
+| **UPPER(..)** | Converts a string to upper-case | **UPPER**('String is SAMPLE') |
+| **CONCAT(..)** | Adds two or more strings together | **CONCAT**('+', country_code, phone_number) |
+| **SUBSTRING(..)** | Extracts some characters from a string. | Syntax: **SUBSTRING**(string, start, length)<br />**SUBSTRING**(name, 1, 1) |
 
 ### OTHERS-INTERMEDIATE
 
