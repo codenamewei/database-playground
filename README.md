@@ -4,14 +4,19 @@ Table of Contents
 -----------------
 
 - [Basic](#basic)
-    - [Select](#select)
-    - [Aggregate](#aggregate)
-    - [Range](#range)
-    - [Mathematics](#mathematics)
-    - [NULL Constraint](#null)
-    - [Others](#others)
+    - [SELECT](#select)
+    - [AGGREGATE](#aggregate)
+    - [RANGE](#range)
+    - [MATHEMATICS](#mathematics)
+    - [NULL](#null)
+    - [Others](#others-basic)
 - [Intermediate](#intermediate)
+    - [CREATE](#create)
+    - [LIKE](#like)
+    - [Others](#others-intermediate)
 - [Advanced](#advanced)
+    - [CASE](#case)
+    - [JOIN](#join)
 - [Other Notes](#other-notes)
 
 ## BASIC
@@ -53,7 +58,7 @@ WHERE price BETWEEN 10 AND 20
 AND category_id NOT IN (1,2,3);
 ```
 
-### Mathematics
+### MATHEMATICS
 
 | Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
@@ -71,7 +76,7 @@ AND category_id NOT IN (1,2,3);
 | **IS NULL** | Check if value is null | SELECT name FROM city WHERE countrycode **IS NULL** |
 | **IS NOT NULL** | Check if value is not null | SELECT name FROM city WHERE countrycode **IS NOT NULL** |
 
-### OTHERS
+### OTHERS-BASIC
 | Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
 | **LENGTH(..)** | Returns the number of characters in a string | SELECT **LENGTH(str)** FROM tbl |
@@ -86,12 +91,7 @@ AND category_id NOT IN (1,2,3);
 
 ## INTERMEDIATE
 
-| Functions | Description | Example |
-| ---------------------  | --------------- | --------------- |
-| **DROP TABLE** | Delete table of a specific name | **DROP TABLE** * DROP TABLE mytable |
-| **UPDATE .. SET ...WHERE** | Modify records in the table | **UPDATE** mytable **SET** username='john doe' **WHERE** id=0 |
-| **DELETE FROM .. WHERE** | Delete records in the table | **DELETE FROM** mytable **WHERE** id=0 |
-
+### CREATE
 
 | Functions | Description |
 | ---------------------  | --------------- |
@@ -135,11 +135,11 @@ INSERT INTO mytable(id, username, johndoe)
 VALUES (123, 'johndoe', 'door');
 ```
 
+### LIKE
 | Functions | Description |
 | ---------------------  | --------------- |
 | **LIKE** | WHERE<>LIKE | Search for a specified pattern in a column |
 | **NOT LIKE** | WHERE<>NOT LIKE | Search for a specified pattern not in a column |
-
 
 ```
 #Template 
@@ -166,7 +166,19 @@ SELECT * FROM mytable
 WHERE username NOT LIKE '%doe%';
 ```
 
+### OTHERS-INTERMEDIATE
+
+| Functions | Description | Example |
+| ---------------------  | --------------- | --------------- |
+| **DROP TABLE** | Delete table of a specific name | **DROP TABLE** * DROP TABLE mytable |
+| **UPDATE .. SET ...WHERE** | Modify records in the table | **UPDATE** mytable **SET** username='john doe' **WHERE** id=0 |
+| **DELETE FROM .. WHERE** | Delete records in the table | **DELETE FROM** mytable **WHERE** id=0 |
+
+
+
 ## Advanced 
+
+### CASE
 
 | Functions | Description |
 | ---------------------  | --------------- |
@@ -199,7 +211,7 @@ FROM STUDENT
 GROUP BY result
 ```
 
-### JOIN & UNION
+### JOIN
 
 | Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
