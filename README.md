@@ -111,6 +111,10 @@ CREATE TABLE mytable
 
 | Functions | Description |
 | ---------------------  | --------------- |
+| **CREATE SCHEMA** | Enters a new schema into the current database |
+
+| Functions | Description |
+| ---------------------  | --------------- |
 | **INSERT INTO ... VALUES** | Insert values into table | 
 
 
