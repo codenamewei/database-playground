@@ -4,29 +4,25 @@ Table of Contents
 -----------------
 
 - [Basic](#basic)
+    - [Select](#select)
     - [Aggregate](#aggregate)
     - [Range](#range)
     - [Mathematics](#mathematics)
     - [NULL Constraint](#null)
+    - [Others](#others)
 - [Intermediate](#intermediate)
 - [Advanced](#advanced)
 - [Other Notes](#other-notes)
 
 ## BASIC
 
+### SELECT
 | Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
 | **SELECT** | Select rows and colums from table | **SELECT** * FROM tbl;<br />**SELECT** * FROM tbl as tb; |
 | **SELECT DISTINCT** | Return only distinct (different) values | **SELECT DISTINCT**(front_name), last_name from tbl |
-| **LENGTH(..)** | Returns the number of characters in a string | SELECT **LENGTH(str)** FROM tbl |
-| **ORDER BY .. ASC/DESC** | Arrange sequence according to alphabetically / numbering order. <br />Always use ORDER BY when using LIMIT; otherwise the rows you will get will be unpredictable. | SELECT CITY, LENGTH(CITY) FROM STATION **ORDER BY** LENGTH(CITY), CITY ASC;<br />SELECT * FROM student<br />**ORDER BY** percentage DESC LIMIT 2;|
-| **LIMIT** | Limit number of returns | SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY), CITY ASC **LIMIT 1** |
-| **AS** | Alias for display. Only been used in the data output. Cannot used for filtering | SELECT COUNT(amount) **AS** num_transactions FROM payment |
-| **GROUP BY** | Group rows that have the same values | SELECT COUNT(CustomerID), Country FROM Customers **GROUP BY **Country; |
-| **CAST** | Converts a value (of any type) into a specified datatype | SELECT **CAST**(ID AS FLOAT) FROM Students WHERE Name = 'Samantha' |
-| **HAVING** | Filter after aggregation have take place |  SELECT SUM(SALES) FROM tbl **HAVING** SUM(SALES) > 1000 |
-| **CONCAT(..)** | Adds two or more strings together | **CONCAT**('+', country_code, phone_number) |
-| **WHERE**| Filter records | SELECT * FROM tbl **WHERE** num=123 | 
+| **SELECT IF** | Return "YES" if the condition is TRUE, or "NO" if the condition is FALSE | **SELECT IF**(GRADE < 8, NULL, NAME) ...|
+
 
 ### AGGREGATE
 
@@ -57,7 +53,6 @@ WHERE price BETWEEN 10 AND 20
 AND category_id NOT IN (1,2,3);
 ```
 
-
 ### Mathematics
 
 | Functions | Description | Example |
@@ -76,6 +71,18 @@ AND category_id NOT IN (1,2,3);
 | **IS NULL** | Check if value is null | SELECT name FROM city WHERE countrycode **IS NULL** |
 | **IS NOT NULL** | Check if value is not null | SELECT name FROM city WHERE countrycode **IS NOT NULL** |
 
+### OTHERS
+| Functions | Description | Example |
+| ---------------------  | --------------- | --------------- |
+| **LENGTH(..)** | Returns the number of characters in a string | SELECT **LENGTH(str)** FROM tbl |
+| **ORDER BY .. ASC/DESC** | Arrange sequence according to alphabetically / numbering order. <br />Always use ORDER BY when using LIMIT; otherwise the rows you will get will be unpredictable. | SELECT CITY, LENGTH(CITY) FROM STATION **ORDER BY** LENGTH(CITY), CITY ASC;<br />SELECT * FROM student<br />**ORDER BY** percentage DESC LIMIT 2;|
+| **LIMIT** | Limit number of returns | SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY), CITY ASC **LIMIT 1** |
+| **AS** | Alias for display. Only been used in the data output. Cannot used for filtering | SELECT COUNT(amount) **AS** num_transactions FROM payment |
+| **GROUP BY** | Group rows that have the same values | SELECT COUNT(CustomerID), Country FROM Customers **GROUP BY **Country; |
+| **CAST** | Converts a value (of any type) into a specified datatype | SELECT **CAST**(ID AS FLOAT) FROM Students WHERE Name = 'Samantha' |
+| **HAVING** | Filter after aggregation have take place |  SELECT SUM(SALES) FROM tbl **HAVING** SUM(SALES) > 1000 |
+| **CONCAT(..)** | Adds two or more strings together | **CONCAT**('+', country_code, phone_number) |
+| **WHERE**| Filter records | SELECT * FROM tbl **WHERE** num=123 | 
 
 ## INTERMEDIATE
 
@@ -201,7 +208,9 @@ GROUP BY result
 | **UNION** | Join results together | SELECT * from tbl **UNION** SELECT * from tbl2 ORDER BY name |
 
 _Note_:
-[JOIN Reference](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
+- [JOIN Reference](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
+- Implicit JOIN = INNER JOIN
+- Order of tables doesnt matter with INNER JOIN
 
 
 ## Other Notes
