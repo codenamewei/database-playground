@@ -203,4 +203,12 @@ _Note_:
 ## Other Notes
 - Avoid using column or table names containing spaces or using reserved words in SQL.  
   For example, avoid names like _table_ or _first name_.
+  
+- Backticks are mainly used to prevent an error called "MySQL reserved word".  
+  Please see the MySQL Manual page entitled [Keywords and Reserved Words](https://dev.mysql.com/doc/refman/8.0/en/keywords.html).  
+  The ones with an (R) are Reserved Words. The others are merely Keywords.  
+  The Reserved require special caution.
+  ```
+  SELECT student_name, AVG(test_score) FROM student GROUP BY `group`
+  ````
 
