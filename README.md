@@ -237,3 +237,7 @@ _Note_:
   SELECT student_name, AVG(test_score) FROM student GROUP BY `group`
   ````
 
+## Time to Test Out Your Skills
+### Hackerrank 
+- [Practice > SQL > Basic Join > The Report](https://www.hackerrank.com/challenges/the-report/problem)
+- [Practice > SQL > Advanced Join > Placements](https://www.hackerrank.com/challenges/placements/problem)
