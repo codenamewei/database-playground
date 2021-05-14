@@ -36,7 +36,7 @@ Table of Contents
 | ---------------------  | --------------- | --------------- |
 | **SUM(..)** | Total sum of a numeric column | SELECT SUM(id) FROM tbl |
 | **AVG(..)** | Average value of a numeric column| To be added |
-| **COUNT(..)** | Number of rows that matches a specified criterion | To be added |
+| **COUNT(..)** | Number of rows that matches a specified criterion | SELECT COUNT(DISTINCT employee_id) FROM student; |
 | **MIN(..)** | Smallest value of the selected column | To be added |
 | **MAX(..)** | Largest value of the selected column | To be added |
 
