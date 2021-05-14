@@ -5,6 +5,7 @@ Table of Contents
 
 - [Basic](#basic)
     - [Aggregate](#aggregate)
+    - [Range](#range)
     - [Mathematics](#mathematics)
     - [NULL Constraint](#null)
 - [Intermediate](#intermediate)
@@ -17,8 +18,6 @@ Table of Contents
 | ---------------------  | --------------- | --------------- |
 | **SELECT** | Select rows and colums from table | **SELECT** * FROM tbl;<br />**SELECT** * FROM tbl as tb; |
 | **SELECT DISTINCT** | Return only distinct (different) values | **SELECT DISTINCT**(front_name), last_name from tbl |
-| **IN**| Specify multiple values in a WHERE clause |  SELECT color FROM table WHERE color **IN** ('red', 'blue') | 
-| **NOT IN**| Specify multiple values not in a WHERE clause |  SELECT * FROM customers WHERE first_name NOT IN ('John', 'Jake', 'Julia') | 
 | **LENGTH(..)** | Returns the number of characters in a string | SELECT **LENGTH(str)** FROM tbl |
 | **ORDER BY .. ASC/DESC** | Arrange sequence according to alphabetically / numbering order. <br />Always use ORDER BY when using LIMIT; otherwise the rows you will get will be unpredictable. | SELECT CITY, LENGTH(CITY) FROM STATION **ORDER BY** LENGTH(CITY), CITY ASC;<br />SELECT * FROM student<br />**ORDER BY** percentage DESC LIMIT 2;|
 | **LIMIT** | Limit number of returns | SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY), CITY ASC **LIMIT 1** |
@@ -38,6 +37,25 @@ Table of Contents
 | **COUNT(..)** | Number of rows that matches a specified criterion | To be added |
 | **MIN(..)** | Smallest value of the selected column | To be added |
 | **MAX(..)** | Largest value of the selected column | To be added |
+
+
+### RANGE
+
+| Functions | Description | Example |
+| ---------------------  | --------------- | --------------- |
+| **IN** | Specify multiple values in a WHERE clause |  SELECT color FROM table WHERE color **IN** ('red', 'blue') | 
+| **NOT IN** | Specify multiple values not in a WHERE clause |  SELECT * FROM customers WHERE first_name NOT IN ('John', 'Jake', 'Julia') | 
+| **BETWEEN** | Selects values within a given range.<br />Operator is inclusive: begin and end values are included |  SELECT * FROM student WHERE percentage between 20 AND 60<br />Same as:<br />SELECT * FROM student WHERE percentage > 20 AND percentage < 60; | 
+| **NOT BETWEEN** | Select values not within a given range. | SELECT * FROM products WHERE price NOT BETWEEN 10 AND 20; |
+
+
+```
+#Combination of RANGE keywords ( Between and In)
+
+SELECT * FROM products
+WHERE price BETWEEN 10 AND 20
+AND category_id NOT IN (1,2,3);
+```
 
 
 ### Mathematics
