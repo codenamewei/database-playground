@@ -133,6 +133,13 @@ VALUES (value1, value2, value3, ...);
 #Example
 INSERT INTO mytable(id, username, johndoe) 
 VALUES (123, 'johndoe', 'door');
+
+#Multiple values input
+INSERT INTO mytable 
+VALUES 
+(123, 'johndoe', 'door'),
+(456, 'sql csv', 'sql');
+
 ```
 
 ### LIKE
