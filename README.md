@@ -30,7 +30,7 @@ Table of Contents
 | ---------------------  | --------------- | --------------- |
 | **SELECT** | Select rows and colums from table | **SELECT** * FROM tbl;<br />**SELECT** * FROM tbl as tb; |
 | **SELECT DISTINCT** | Return only distinct (different) values | **SELECT DISTINCT**(front_name), last_name from tbl |
-| **SELECT IF** | Return "YES" if the condition is TRUE, or "NO" if the condition is FALSE | **SELECT IF**(GRADE < 8, NULL, NAME) ...|
+| **SELECT IF**<br /> - [ ] Postgresql<br /> - [x] Mysql| Return "YES" if the condition is TRUE, or "NO" if the condition is FALSE | **SELECT IF**(GRADE < 8, NULL, NAME) ...|
 
 
 ### AGGREGATE
@@ -70,6 +70,8 @@ AND category_id NOT IN (1,2,3);
 | **CEIL(..)** | Returns the smallest integer value that is bigger than or equal to a number | To be added |
 | **FLOOR(..)** | Returns the largest integer value that is smaller than or equal to a number | To be added |
 | **ABS(..)** | Returns absolute values | SELECT **ABS**(MAX(value) - MIN(value)) FROM tbl|
+| **MOD(x, y)** | Returns the remainder of a number divided by another number | SELECT CASE WHEN MOD(4, 2) = 0 THEN 'even number' ELSE 'not an even number' END; |
+
 
 
 ### Constraint
