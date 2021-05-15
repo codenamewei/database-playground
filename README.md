@@ -240,6 +240,16 @@ _Note_:
 - Implicit JOIN = INNER JOIN
 - Order of tables doesnt matter with INNER JOIN
 
+### VIEW
+
+| View | Description |
+| ---------------------  | --------------- |
+| **INFORMATION_SCHEMA.TABLE** | View that allow you to find what tables are in your schema.<br /><br />Provides access to database metadata, information about the MySQL server such as the name of a database or table, the data type of a column, or access privileges. |
+
+```
+SELECT * FROM INFORMATION_SCHEMA.TABLE;
+```
+
 
 ## Other Notes
 - Avoid using column or table names containing spaces or using reserved words in SQL.  
