@@ -18,6 +18,7 @@ Table of Contents
 - [Advanced](#advanced)
     - [CASE](#case)
     - [JOIN](#join)
+    - [VIEW](#view)
 - [Other Notes](#other-notes)
 
 ## BASIC
