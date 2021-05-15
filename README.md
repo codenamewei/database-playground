@@ -19,6 +19,7 @@ Table of Contents
     - [CASE](#case)
     - [JOIN](#join)
     - [VIEW](#view)
+    - [Others](#others-advanced)
 - [Other Notes](#other-notes)
 
 ## BASIC
@@ -251,6 +252,10 @@ Information Schema provides access to database metadata, information about the M
 | **INFORMATION_SCHEMA.TABLES** | Provide all tables in the database | SELECT * FROM INFORMATION_SCHEMA.TABLE; |
 | **INFORMATION_SCHEMA.COLUMNS** | Provide all columns and tables in the database | SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE table_schema = 'public' and table_name = 'signup'; |
 
+### OTHERS-ADVANCED
+| Functions | Description | Example |
+| ---------------------  | --------------- | --------------- |
+| **REPEAT** | Repeat a string for as many times as specified| SET @number = 21;<br />SELECT **REPEAT**('* ', @number := @number - 1) FROM INFORMATION_SCHEMA.TABLES;  |
 
 ## Other Notes
 - Avoid using column or table names containing spaces or using reserved words in SQL.  
