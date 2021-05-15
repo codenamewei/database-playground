@@ -18,6 +18,7 @@ Table of Contents
 - [Advanced](#advanced)
     - [CASE](#case)
     - [JOIN](#join)
+    - [VARIABLE](#variable)
     - [VIEW](#view)
     - [Others](#others-advanced)
 - [Other Notes](#other-notes)
@@ -242,6 +243,25 @@ _Note_:
 - Implicit JOIN = INNER JOIN
 - Order of tables doesnt matter with INNER JOIN
 
+### VARIABLE
+
+MySQL has a concept of user-defined variables.
+
+They are loosely typed variables that may be initialized somewhere in a session and keep their value until the session ends.
+
+They are prepended with an @ sign, like this: @var
+
+Initialize user-define variable with a SET statement:
+```
+SET @var = 1
+```
+or inside a query
+
+```
+SELECT @var2 := 2
+```
+
+
 ### VIEW
 Understanding the schema and what tables are in it help to write efficient SQL and helps avoid running queries multiple times just to see if the schema name or column name is correct. 
  
@@ -276,4 +296,5 @@ Information Schema provides access to database metadata, information about the M
 - [Practice > SQL > Advanced Join > Placements](https://www.hackerrank.com/challenges/placements/problem)
 - [Practice > SQL > Advanced Select > Binary Tree Nodes](https://www.hackerrank.com/challenges/binary-search-tree-1/problem)
 - [Practice > SQL > Advanced Select > New Companies](https://www.hackerrank.com/challenges/the-company/problem)
+- [Practice > SQL > Advanced Queries > Draw The Triangle 1](https://www.hackerrank.com/challenges/draw-the-triangle-1/problem)
 
