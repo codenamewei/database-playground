@@ -241,14 +241,14 @@ _Note_:
 - Order of tables doesnt matter with INNER JOIN
 
 ### VIEW
+Understanding the schema and what tables are in it help to write efficient SQL and helps avoid running queries multiple times just to see if the schema name or column name is correct. 
+ 
+Information Schema provides access to database metadata, information about the MySQL server such as the name of a database or table, the data type of a column, or access privileges.
 
-| View | Description |
-| ---------------------  | --------------- |
-| **INFORMATION_SCHEMA.TABLE** | View that allow you to find what tables are in your schema.<br /><br />Provides access to database metadata, information about the MySQL server such as the name of a database or table, the data type of a column, or access privileges. |
-
-```
-SELECT * FROM INFORMATION_SCHEMA.TABLE;
-```
+| View | Description | Example |
+| ---------------------  | --------------- | --------------- |
+| **INFORMATION_SCHEMA.TABLES** | Provide all tables in the database | SELECT * FROM INFORMATION_SCHEMA.TABLE; |
+| **INFORMATION_SCHEMA.COLUMNS** | Provide all columns and tables in the database | SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE table_schema = 'public' and table_name = 'signup'; |
 
 
 ## Other Notes
