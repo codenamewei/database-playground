@@ -275,7 +275,7 @@ Information Schema provides access to database metadata, information about the M
 ### OTHERS-ADVANCED
 | Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
-| **REPEAT** | Repeat a string for as many times as specified| SET @number = 21;<br />SELECT **REPEAT**('* ', @number := @number - 1) FROM INFORMATION_SCHEMA.TABLES;  |
+| **REPEAT** | Repeat a string for as many times as specified| SET @number = 21;<br /><br />SELECT **REPEAT**('* ', @number := @number - 1) FROM INFORMATION_SCHEMA.TABLES;<br /><br />SELECT REPEAT('* ', @var := @var + 1) FROM INFORMATION_SCHEMA.TABLES WHERE @var < 20; |
 
 ## Other Notes
 - Avoid using column or table names containing spaces or using reserved words in SQL.  
@@ -297,4 +297,6 @@ Information Schema provides access to database metadata, information about the M
 - [Practice > SQL > Advanced Select > Binary Tree Nodes](https://www.hackerrank.com/challenges/binary-search-tree-1/problem)
 - [Practice > SQL > Advanced Select > New Companies](https://www.hackerrank.com/challenges/the-company/problem)
 - [Practice > SQL > Advanced Queries > Draw The Triangle 1](https://www.hackerrank.com/challenges/draw-the-triangle-1/problem)
+- [Practice > SQL > Advanced Queries > Draw The Triangle 2](https://www.hackerrank.com/challenges/draw-the-triangle-2/problem)
+
 
