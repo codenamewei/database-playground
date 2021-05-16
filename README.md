@@ -22,6 +22,7 @@ Table of Contents
     - [VIEW](#view)
     - [Others](#others-advanced)
 - [Other Notes](#other-notes)
+- [Time To Test Out Your Skills](#time-to-test-out-your-skills)
 
 ## BASIC
 
@@ -291,7 +292,6 @@ Information Schema provides access to database metadata, information about the M
   SELECT student_name, AVG(test_score) FROM student GROUP BY `group`
   ````
 - Other Keywords
-- 
 | Keywords | Description |
 | ---------------------  | --------------- |
 | **Database Schema** | [Blueprint/Architecture of Data](https://www.educative.io/blog/what-are-database-schemas-examples) of how the data should looks like.<br />An entry in the database will be an instance of the database schema.   |
@@ -303,9 +303,11 @@ Information Schema provides access to database metadata, information about the M
 | **Entity-Relationship Modeling** | Create logical database schema to illustrate relationships between data components. |
 | **Primary Key** | Identify a record in the table |
 | **Foreign Key** | Primay key for another table |
+| **Three Schema Architecture** | TBA |
+| **Relation Model Concepts** | TBA |
+| **Functional Dependencies** | TBA|
+| **Normalization** | TBA |
 
-
-     
 
 ## Time to Test Out Your Skills
 ### Hackerrank 
