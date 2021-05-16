@@ -298,7 +298,11 @@ Information Schema provides access to database metadata, information about the M
 | **Data Modelling** | Process of planning a database design |
 | **Relational Database Management System** | Software that stores and retrieves user data in a secure way that follows the [ACID](https://blog.sqlauthority.com/2007/12/09/sql-server-acid-atomicity-consistency-isolation-durability/) concept.<br/>Note: Some popular DBMS systems are MySQL, Oracle, PostgreSQL, Microsoft Access, MariaBB, and dBASE, amongst others.|
 | **Database Administrator (DBA)** | Individual responsible for database design and DBMS responsibilities including ensuring that data analysts and database users can easily access information. |
-| *Entity-Relationship Modeling** | Create logical database schema to illustrate relationships between data components. |
+| **Logical Database Schema** | Represents how the data is organized in terms of tables |
+| **Physical Database Schema** | Represents how data is stored on disk storage. In other words, it is the actual code that will be used to create the structure of the database |
+| **Entity-Relationship Modeling** | Create logical database schema to illustrate relationships between data components. |
+| **Primary Key** | Identify a record in the table |
+| **Foreign Key** | Primay key for another table |
 
 
      
