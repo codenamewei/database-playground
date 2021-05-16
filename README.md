@@ -290,12 +290,14 @@ Information Schema provides access to database metadata, information about the M
   ```
   SELECT student_name, AVG(test_score) FROM student GROUP BY `group`
   ````
-- Other things to look into for RDBMS
-
+- Other Keywords
+- 
 | Keywords | Description |
 | ---------------------  | --------------- |
 | **Database Schema** | [Blueprint/Architecture of Data](https://www.educative.io/blog/what-are-database-schemas-examples) of how the data should looks like.<br />An entry in the database will be an instance of the database schema.   |
 | **Data Modelling** | Process of planning a database design |
+| **Relational Database Management System** | Software that stores and retrieves user data in a secure way that follows the [ACID](https://blog.sqlauthority.com/2007/12/09/sql-server-acid-atomicity-consistency-isolation-durability/) concept. |
+
      
 
 ## Time to Test Out Your Skills
