@@ -238,7 +238,7 @@ GROUP BY result
 | Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
 | **(INNER) JOIN** | Selects records that have matching values in both table | SELECT Students.ID, Name, Friend_ID FROM Students JOIN Friends ON Students.ID = Friends.ID |
-| **FULL OUTER JOIN** | Selects all records | SELECT * FROM Registrations FULL OUTER JOIN Logins ON Registrations.name = Logins.name |
+| **FULL OUTER JOIN** | Selects all records | SELECT * FROM Registrations FULL OUTER JOIN Logins ON Registrations.name = Logins.name WHERE Registrations.reg_id IS NULL OR Logins.log_id IS NULL |
 | **UNION** | Join results together | SELECT * from tbl **UNION** SELECT * from tbl2 ORDER BY name |
 
 _Note_:
