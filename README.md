@@ -292,6 +292,7 @@ Information Schema provides access to database metadata, information about the M
   SELECT student_name, AVG(test_score) FROM student GROUP BY `group`
   ````
 - Other Keywords
+
 | Keywords | Description |
 | ---------------------  | --------------- |
 | **Database Schema** | [Blueprint/Architecture of Data](https://www.educative.io/blog/what-are-database-schemas-examples) of how the data should looks like.<br />An entry in the database will be an instance of the database schema.   |
