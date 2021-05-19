@@ -238,8 +238,9 @@ GROUP BY result
 | Functions | Description | Example |
 | ---------------------  | --------------- | --------------- |
 | **(INNER) JOIN** | Selects records that have matching values in both table | SELECT Students.ID, Name, Friend_ID FROM Students JOIN Friends ON Students.ID = Friends.ID |
-| **FULL OUTER JOIN** | Selects all records | SELECT * FROM Registrations FULL OUTER JOIN Logins ON Registrations.name = Logins.name WHERE Registrations.reg_id IS NULL OR Logins.log_id IS NULL |
-| **LEFT OUTER JOIN** | Results in the set of records that are in the left table, if there are no match with the right table, the results are null. | SELECT * FROM Registrations LEFT OUTER JOIN Logins ON Registrations.name = Logins.name WHERE Logins.login_id IS null |
+| **FULL (OUTER) JOIN** | Selects all records | SELECT * FROM Registrations FULL JOIN Logins ON Registrations.name = Logins.name WHERE Registrations.reg_id IS NULL OR Logins.log_id IS NULL |
+| **LEFT (OUTER) JOIN** | Results in the set of records that are in the left table, if there are no match with the right table, the results are null. | SELECT * FROM Registrations LEFT JOIN Logins ON Registrations.name = Logins.name WHERE Logins.login_id IS null |
+| **RIGHT (OUTER) JOIN** | Same as LEFT (OUTER) JOIN, except the tables are switched. | SELECT * FROM Registrations RIGHT JOIN Logins ON Registrations.name = Logins.name WHERE Logins.login_id IS null |
 | **UNION** | Join results together | SELECT * from tbl **UNION** SELECT * from tbl2 ORDER BY name |
 
 _Note_:
