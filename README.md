@@ -313,6 +313,8 @@ Information Schema provides access to database metadata, information about the M
 | **Functional Dependencies** | TBA|
 | **Normalization** | TBA |
 
+- For more references
+    - [SQL Cheat Sheet](https://drive.google.com/file/d/1Pj1FGqJLVadW48195ngmvHPHzekZS0Rf/view?usp=sharing)  
 
 ## Time to Test Out Your Skills
 ### Hackerrank 
