@@ -1,6 +1,6 @@
-# SQL Keywords [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# SQL Keywords 
 
-A continual adding list of SQL Keywords.
+SQL Syntax that can be applied to any major type of SQL Database (MySQL, Oracle, PostGreSQL...)
 
 Table of Contents
 -----------------
