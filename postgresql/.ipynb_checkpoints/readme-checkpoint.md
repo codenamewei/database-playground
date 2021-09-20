@@ -15,3 +15,6 @@ Run
 ```
 pip install --pre psycopg[binary,pool]  # install binary files
 ```
+
+### Issues
+- [[database, postgres] psycopg3 no pg wrapper available](https://github.com/buibuiai/tech-docs/issues/39)
