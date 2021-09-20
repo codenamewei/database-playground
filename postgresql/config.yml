@@ -1,0 +1,17 @@
+name: postgres-playground
+channels:
+  - anaconda
+  - conda-forge
+dependencies:
+  - python=3.9.*
+  - pillow=8.0.*
+  - pandas=1.1.*
+  - matplotlib=3.3.*
+  - scikit-learn=0.19.*
+  - seaborn=0.11.*
+  - jupyterlab
+  - pip=20.2.*
+  - pip:
+      - requests-toolbelt==0.9.*
+      - gdown==3.12.*
+      - PyYAML==5.3.*
