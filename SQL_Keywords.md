@@ -53,7 +53,7 @@ Table of Contents
 | ---------------------  | --------------- | --------------- |
 | **IN** | Specify multiple values in a WHERE clause |  SELECT color FROM table WHERE color **IN** ('red', 'blue') | 
 | **NOT IN** | Specify multiple values not in a WHERE clause |  SELECT * FROM customers WHERE first_name NOT IN ('John', 'Jake', 'Julia') | 
-| **BETWEEN** | Selects values within a given range.<br />Operator is inclusive: begin and end values are included |  SELECT * FROM student WHERE percentage between 20 AND 60<br />Same as:<br />SELECT * FROM student WHERE percentage > 20 AND percentage < 60; | 
+| **BETWEEN** | Selects values within a given range.<br />**Operator is inclusive: begin and end values are included** |  SELECT * FROM student WHERE percentage between 20 AND 60<br />Same as:<br />SELECT * FROM student WHERE percentage > 20 AND percentage < 60; | 
 | **NOT BETWEEN** | Select values not within a given range. | SELECT * FROM products WHERE price NOT BETWEEN 10 AND 20; |
 
 
