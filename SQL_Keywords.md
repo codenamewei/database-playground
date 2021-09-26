@@ -188,7 +188,7 @@ WHERE username NOT LIKE '%doe%';
 | **LOWER(..)** | Converts a string to lower-case | **LOWER**('String is SAMPLE') |
 | **UPPER(..)** | Converts a string to upper-case | **UPPER**('String is SAMPLE') |
 | **CONCAT(..)** | Adds two or more strings together | **CONCAT**('+', country_code, phone_number) |
-| **SUBSTRING(..)** | Extracts some characters from a string. | Syntax: **SUBSTRING**(string, start, length)<br />**SUBSTRING**(name, 1, 1) |
+| **SUBSTRING(..)** | Extracts some characters from a string.<br />**Index of string starts from 1, not 0** | Syntax: **SUBSTRING**(string, start, length)<br />**SUBSTRING**(name, 1, 1) |
 
 ### OTHERS-INTERMEDIATE
 
