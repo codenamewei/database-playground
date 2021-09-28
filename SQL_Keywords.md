@@ -158,6 +158,10 @@ VALUES
 | **LIKE** | WHERE<>LIKE | Search for a specified pattern in a column |
 | **NOT LIKE** | WHERE<>NOT LIKE | Search for a specified pattern not in a column |
 
+- There are two wildcards often used in conjunction with the LIKE operator:
+    - The percent sign (%) represents zero, one, or multiple characters
+    - The underscore sign (_) represents one, single character
+
 ```
 #Template 
 SELECT * FROM tbl WHERE name LIKE ???
