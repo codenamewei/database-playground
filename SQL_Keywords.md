@@ -42,7 +42,7 @@ Table of Contents
 | ---------------------  | --------------- | --------------- |
 | **SUM(..)** | Total sum of a numeric column | SELECT SUM(id) FROM tbl |
 | **AVG(..)** | Average value of a numeric column| To be added |
-| **COUNT(..)** | Number of rows that matches a specified criterion | SELECT COUNT(DISTINCT employee_id) FROM student; |
+| **COUNT(..)** | Number of rows that matches a specified criterion<br />While COUNT(*) is possible, it's good to provide COUNT(ITEM) to provide clarity<br /> | SELECT COUNT(DISTINCT employee_id) FROM student; |
 | **MIN(..)** | Smallest value of the selected column | To be added |
 | **MAX(..)** | Largest value of the selected column | To be added |
 | **GROUP BY** | Group rows that have the same values | SELECT COUNT(CustomerID), Country FROM Customers **GROUP BY** Country, Country_id;|
@@ -96,7 +96,7 @@ AND category_id NOT IN (1,2,3);
 | **IS NULL** | Check if value is null | SELECT name FROM city WHERE countrycode **IS NULL** |
 | **IS NOT NULL** | Check if value is not null | SELECT name FROM city WHERE countrycode **IS NOT NULL** |
 | **LENGTH(..)** | Returns the number of characters in a string | SELECT **LENGTH(str)** FROM tbl |
-| **ORDER BY .. ASC/DESC** | Arrange sequence according to alphabetically / numbering order. <br />Always use ORDER BY when using LIMIT; otherwise the rows you will get will be unpredictable. | SELECT CITY, LENGTH(CITY) FROM STATION **ORDER BY** LENGTH(CITY), CITY ASC;<br />SELECT * FROM student<br />**ORDER BY** percentage DESC LIMIT 2;|
+| **ORDER BY .. ASC/DESC** | Arrange sequence according to alphabetically / numbering order. <br />It's a good practice to explicitly mention ASC, DESC to provide clarity in the future | SELECT CITY, LENGTH(CITY) FROM STATION **ORDER BY** LENGTH(CITY), CITY ASC;<br />SELECT * FROM student<br />**ORDER BY** percentage DESC LIMIT 2;|
 | **LIMIT** | Limit number of returns | SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY), CITY ASC **LIMIT 1** |
 | **AS** | Alias for display. Only been used in the data output. Cannot used for filtering | SELECT COUNT(amount) **AS** num_transactions FROM payment |
 | **CAST** | Converts a value (of any type) into a specified datatype | SELECT **CAST**(ID AS FLOAT) FROM Students WHERE Name = 'Samantha' |
