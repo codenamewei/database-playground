@@ -24,7 +24,6 @@ Table of Contents
     - [VIEW](#view)
     - [Others](#others-advanced)
 - [Other Notes](#other-notes)
-- [Time To Test Out Your Skills](#time-to-test-out-your-skills)
 
 ## BASIC
 
