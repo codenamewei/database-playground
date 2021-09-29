@@ -42,14 +42,15 @@ Table of Contents
 | ---------------------  | --------------- | --------------- |
 | **SUM(..)** | Total sum of a numeric column | SELECT SUM(id) FROM tbl |
 | **AVG(..)** | Average value of a numeric column| To be added |
-| **COUNT(..)** | Number of rows that matches a specified criterion<br />While COUNT(*) is possible, it's good to provide COUNT(ITEM) to provide clarity<br /> | SELECT COUNT(DISTINCT employee_id) FROM student; |
+| **COUNT(..)** | Number of rows that matches a specified criterion | SELECT COUNT(DISTINCT employee_id) FROM student; |
 | **MIN(..)** | Smallest value of the selected column | To be added |
 | **MAX(..)** | Largest value of the selected column | To be added |
 | **GROUP BY** | Group rows that have the same values | SELECT COUNT(CustomerID), Country FROM Customers **GROUP BY** Country, Country_id;|
 | **HAVING** | Filter after aggregation have take place |  SELECT SUM(SALES) FROM tbl **HAVING** SUM(SALES) > 1000 |
 
 __Note:__
-- Aggregate function happens only in the SELECT clause or the HAVINg clause
+- Aggregate function happens only in the SELECT clause or the HAVING clause
+- While COUNT(*) is possible, it's good to provide COUNT(ITEM) to provide clarity
 
 
 ### RANGE
@@ -323,16 +324,5 @@ Information Schema provides access to database metadata, information about the M
 
 - For more references
     - [SQL Cheat Sheet](https://drive.google.com/file/d/1Pj1FGqJLVadW48195ngmvHPHzekZS0Rf/view?usp=sharing)  
-
-## Time to Test Out Your Skills
-### Hackerrank 
-- [Practice > SQL > Basic Join > The Report](https://www.hackerrank.com/challenges/the-report/problem)
-- [Practice > SQL > Basic Join > Contest Leaderboard](https://www.hackerrank.com/challenges/contest-leaderboard/problem)
-- [Practice > SQL > Advanced Join > Placements](https://www.hackerrank.com/challenges/placements/problem)
-- [Practice > SQL > Advanced Join > Symmetric Pairs](https://www.hackerrank.com/challenges/symmetric-pairs/problem)
-- [Practice > SQL > Advanced Select > Binary Tree Nodes](https://www.hackerrank.com/challenges/binary-search-tree-1/problem)
-- [Practice > SQL > Advanced Select > New Companies](https://www.hackerrank.com/challenges/the-company/problem)
-- [Practice > SQL > Advanced Queries > Draw The Triangle 1](https://www.hackerrank.com/challenges/draw-the-triangle-1/problem)
-- [Practice > SQL > Advanced Queries > Draw The Triangle 2](https://www.hackerrank.com/challenges/draw-the-triangle-2/problem)
 
 
