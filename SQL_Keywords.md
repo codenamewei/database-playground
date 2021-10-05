@@ -161,7 +161,7 @@ VALUES
 | **LIKE** | WHERE<>LIKE | Search for a specified pattern in a column |
 | **NOT LIKE** | WHERE<>NOT LIKE | Search for a specified pattern not in a column |
 
-- LIKE is case sensitve, use ILIKE to be case insensitive
+- LIKE is case sensitve, use **ILIKE** to be case insensitive
 - There are two wildcards often used in conjunction with the LIKE operator:
     - The percent sign (%) represents zero, one, or multiple characters
     - The underscore sign (_) represents one, single character
