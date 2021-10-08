@@ -18,7 +18,7 @@ Table of Contents
     - [String Operation](#string-operation)
     - [Others](#others-intermediate)
 - [Advanced](#advanced)
-    - [REGEXP](#regexp] 
+    - [REGEXP](#regexp)
     - [CASE](#case)
     - [JOIN](#join)
     - [VARIABLE](#variable)
