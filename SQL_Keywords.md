@@ -215,7 +215,7 @@ WHERE username NOT LIKE '%doe%';
 
 | Functions | Description |
 | ---------------------  | --------------- |
-| **REGEXP(..)** | Match a String to a regular expression |
+| **REGEXP(..)** | Match a String to a regular expression. REGEXP is not case sensitive |
 
 Check out [regex.md](regex.md) for details.
 
