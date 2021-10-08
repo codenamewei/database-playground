@@ -18,6 +18,7 @@ Table of Contents
     - [String Operation](#string-operation)
     - [Others](#others-intermediate)
 - [Advanced](#advanced)
+    - [REGEXP](#regexp] 
     - [CASE](#case)
     - [JOIN](#join)
     - [VARIABLE](#variable)
@@ -209,6 +210,14 @@ WHERE username NOT LIKE '%doe%';
 
 
 ## Advanced 
+
+### REGEXP
+
+| Functions | Description |
+| ---------------------  | --------------- |
+| **REGEXP(..)** | Match a String to a regular expression |
+
+Check out [regex.md](regex.md) for details.
 
 ### CASE
 
