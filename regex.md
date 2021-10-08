@@ -14,6 +14,9 @@ Specify which characters are allowed in a single position of a string:
 | **"[ab]"** | matches a string that has either an a or a b (that's the same as **"a\|b"**) | 
 | **"[a-d]"** | a string that has lowercase letters 'a' through 'd' (that's equal to **"a\|b\|c\|d"** and even **[abcd]**) | 
 
+### Examples
 
+- Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION.
+  - ```SELECT CITY FROM STATION WHERE CITY REGEXP '^[aeiou]'``` 
 ### References
 - https://dl.icewarp.com/online_help/203030104.htm
