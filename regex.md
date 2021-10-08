@@ -13,6 +13,7 @@ Specify which characters are allowed in a single position of a string:
 | ---------------------  | --------------- |
 | **"[ab]"** | matches a string that has either an a or b (that's the same as **"a\|b"**) | 
 | **"[a-d]"** | a string that has lowercase letters 'a' through 'd' (that's equal to **"a\|b\|c\|d"** and even **[abcd]**) | 
+| **"^[a-zA-Z]"** | a string that starts with a letter | 
 | **"[^ab]"** | matches a string that has doesn't start with an a or b | 
 
 
@@ -24,5 +25,6 @@ Specify which characters are allowed in a single position of a string:
   - ```SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP "^[aeiou]" AND CITY REGEXP "[aeiou]$"```
 - Query the list of CITY names from STATION that do not start with vowels. 
   - ```SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP "^[^aeiou]"``` 
+  
 ### References
 - https://dl.icewarp.com/online_help/203030104.htm
