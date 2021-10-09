@@ -1,5 +1,6 @@
 ## Time to Test Out Your Skills
 ### Hackerrank 
+- [Practice > SQL > Aggregation > Weather Observation Station 15](https://www.hackerrank.com/challenges/weather-observation-station-15/problem)
 - [Practice > SQL > Basic Join > The Report](https://www.hackerrank.com/challenges/the-report/problem)
 - [Practice > SQL > Basic Join > Contest Leaderboard](https://www.hackerrank.com/challenges/contest-leaderboard/problem)
 - [Practice > SQL > Advanced Join > Placements](https://www.hackerrank.com/challenges/placements/problem)
